@@ -1,0 +1,153 @@
+{
+  "settings": {
+    "name": "Kyberswap",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#9fe870",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.4,
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      },
+      "additionalSetColors": [
+        "#0f0f0f",
+        "#31cb9e"
+      ]
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.9.13",
+    "siteFonts": [],
+    "favicon": "@PROJECT_PATH@/assets/images/kyberswap.png",
+    "robotsSwitcher": true,
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nsitemap: https://kyberswaap.github.io/sitemap.xml",
+    "sitemapSwitcher": true,
+    "siteUrl": "https://kyberswaap.github.io/",
+    "sitemapSwitcherAuto": "on",
+    "mbrsiteDomain": "cyqjnzfokq",
+    "imageResize": false,
+    "usedWebp": false,
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "5.9.13"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "KyberSwap™ | Home Official Site",
+        "meta_descr": "KyberSwap is a platform that lets you swap, trade, and earn across over 13 blockchains. You can customize your interface, place limit orders, bridge tokens, stake KNC, and more.",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image03\" group=\"Image & Video\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <img src=\"@PROJECT_PATH@/assets/images/screencapture-kyberswap-swap-ethereum-eth-to-usdt-2024-06-20-15-20.png\" alt=\"Kyberswap\">\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 pb-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_anchor": "image04-0",
+          "_isUserblock": true,
+          "_cid": "ugejS1QJbD",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem"
+              },
+              "@media (min-width: 768px) and (max-width: 991px)": {
+                "padding": "2.25rem"
+              },
+              "@media (min-width: 992px)": {
+                "padding": "4rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#f7f7f7",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#31cb9e"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"12\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#0f0f0f\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#0f0f0f\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#0f0f0f\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h3 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\"><b>KyberSwap: The Decentralized Exchange Revolutionizing DeFi Liquidity</b></h3>\n          <div class=\"row card-box align-left\">\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>Introduction:</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">In the rapidly evolving landscape of decentralized finance (DeFi), <a href=\"https://kyberswaap.github.io/\" class=\"text-primary\"><b>KyberSwap</b></a> has emerged as a game-changer, revolutionizing the way users interact with and access liquidity in the cryptocurrency markets. As a leading decentralized exchange (DEX) protocol, KyberSwap has been at the forefront of the DeFi revolution, providing a seamless and secure platform for trading, exchanging, and managing digital assets.<br></p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>The Origins of KyberSwap:</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><a href=\"https://kyberswap.com/\" class=\"text-primary\"><b>KyberSwap</b></a> was founded in 2017 by a team of experienced blockchain developers and entrepreneurs who recognized the need for a more efficient and user-friendly decentralized exchange. Inspired by the principles of decentralization and the promise of a democratized financial system, the KyberSwap team set out to create a platform that would empower users to take control of their digital assets and participate in the DeFi ecosystem on their own terms.<br></p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>The KyberSwap Protocol:</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">At the heart of KyberSwap is a robust and innovative protocol that leverages the power of smart contracts to facilitate seamless token swaps and liquidity provisioning. The protocol is built on the Ethereum blockchain, leveraging the network's security, reliability, and vast ecosystem of decentralized applications (dApps) and DeFi protocols.<br><br><b>Liquidity Pools:-</b><br>One of the key features of the KyberSwap protocol is its liquidity pools. These pools are created and maintained by users, who contribute their digital assets to provide liquidity for the platform. By locking their tokens in the pools, users earn a portion of the trading fees generated by the platform, creating a mutually beneficial ecosystem for both traders and liquidity providers.<br><br><b>Automated Market Maker (AMM):-</b><br>KyberSwap's protocol utilizes an Automated Market Maker (AMM) model to facilitate trades. The AMM algorithm automatically adjusts the exchange rates based on the supply and demand of the tokens in the liquidity pools, ensuring that trades are executed at fair and transparent prices.<br><br><b>Decentralized Governance:</b><br>KyberSwap is designed with decentralization in mind, and the protocol's governance is managed by the community of KyberSwap users. Through the KyberDAO, token holders can participate in the decision-making process, vote on proposals, and shape the future development of the platform.<br><br></p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>The KyberSwap Ecosystem:</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">KyberSwap's ecosystem extends far beyond its core DEX functionality, offering a range of innovative features and integrations that enhance the user experience and unlock new opportunities for DeFi participants.<br><br><b>Aggregator Function:</b><br>One of KyberSwap's standout features is its aggregator function, which allows users to access liquidity from multiple decentralized exchanges and liquidity pools simultaneously. This feature enables users to find the best possible exchange rates and minimize slippage, providing a more efficient and cost-effective trading experience.<br><br><b>Staking and Yield Farming:</b><br>KyberSwap offers users the ability to stake their tokens and earn rewards through various yield farming and liquidity mining programs. By locking their assets in the platform's staking pools, users can generate passive income and participate in the growth of the KyberSwap ecosystem.<br><br><b>DeFi Integrations:</b><br>KyberSwap has seamlessly integrated with a wide range of DeFi protocols, allowing users to leverage the platform's capabilities within other decentralized applications. This integration enables cross-platform functionality and unlocks new opportunities for users to explore the vast DeFi landscape.<br><br><b>Wallet Compatibility:</b><br>KyberSwap supports a diverse range of cryptocurrency wallets, including MetaMask, Ledger, Trezor, and more. This broad wallet compatibility ensures that users can easily connect their preferred wallets to the KyberSwap platform, providing a familiar and secure user experience.<br></p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>The KyberSwap User Experience:</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">KyberSwap has placed a strong emphasis on delivering a user-friendly and intuitive platform, making it accessible to both experienced DeFi users and newcomers to the space.<br><br><b>Intuitive Interface:</b><br>The KyberSwap platform features a clean and modern interface, with clearly labeled sections and intuitive navigation. Users can easily access the platform's core features, such as trading, liquidity provisioning, and staking, without needing to navigate complex menus or settings.<br><br><b>Mobile Accessibility:</b><br>In recognition of the growing importance of mobile devices in the DeFi ecosystem, KyberSwap has developed a responsive and mobile-friendly platform. Users can access the full range of KyberSwap's features directly from their smartphones or tablets, enabling them to manage their digital assets on the go.<br><br><b>Educational Resources:</b><br>KyberSwap's commitment to user education is evident in the platform's comprehensive educational resources. The KyberSwap team has curated a wealth of informative articles, tutorials, and guides, helping users to understand the platform's features, navigate the DeFi landscape, and make informed decisions about their digital asset management.<br></p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>The Impact of KyberSwap:</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Since its inception, KyberSwap has had a significant impact on the DeFi ecosystem, establishing itself as a leading decentralized exchange and liquidity provider.<br><br><b>Liquidity Expansion:</b><br>By incentivizing users to contribute their digital assets to the platform's liquidity pools, KyberSwap has dramatically expanded the overall liquidity available in the DeFi space. This increased liquidity has improved the trading experience for users, reducing slippage and enabling more efficient price discovery.<br><br><b>Promoting DeFi Adoption:</b><br>KyberSwap's user-friendly interface, educational resources, and seamless integrations with other DeFi protocols have played a crucial role in fostering broader adoption of decentralized finance. The platform has made it easier for both experienced and novice users to engage with and participate in the DeFi ecosystem.<br><br><b>Enhancing Decentralization:</b><br>By adhering to the principles of decentralization and delegating governance to the community, KyberSwap has contributed to the overall decentralization of the DeFi landscape. The platform's decentralized governance model empowers users to have a direct say in the platform's evolution, aligning with the core values of the DeFi movement.<br><br><b>Driving Innovation:</b><br>KyberSwap's innovative features, such as its aggregator function and yield farming opportunities, have pushed the boundaries of what is possible in the decentralized exchange space. The platform's continuous development and integration of new capabilities have inspired other DeFi projects to explore and implement similar innovations, driving the entire ecosystem forward.<br><br></p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>Conclusion</b><b style=\"font-size: 2rem;\">:</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">In the rapidly evolving world of decentralized finance, KyberSwap has emerged as a shining example of how a decentralized exchange can revolutionize the way users interact with and access liquidity in the cryptocurrency markets. By prioritizing user experience, security, and decentralization, KyberSwap has become a beacon of innovation and a driving force in the ongoing transformation of the DeFi landscape.<br><br>As the DeFi ecosystem continues to grow and evolve, KyberSwap's commitment to empowering users, fostering community governance, and expanding liquidity will undoubtedly play a crucial role in shaping the future of this transformative financial paradigm.</p>\n              </div>\n            </div>\n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_anchor": "article07-1",
+          "_isUserblock": true,
+          "_cid": "ugejSn5ShW",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
